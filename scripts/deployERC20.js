@@ -1,3 +1,5 @@
+const { ethers } = require("hardhat");
+
 async function main() {
     const MyToken = await ethers.getContractFactory("MyToken");
     const token = await MyToken.deploy(1000000); // 1 million tokens
@@ -11,4 +13,4 @@ async function main() {
     process.exitCode = 1;
   });
   
-  //0xF1183239824A955DadB69e93a784EeFA2b2562B5
+  //0x654247D1d16dB0002D6592A4d7CD30AD0a1DD2aF
